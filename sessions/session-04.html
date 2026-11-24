@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sessions 7–8 — Custom GPTs and the Delta Core Analytics Case · EMBA26042</title>
+<meta name="description" content="The Delta Core Analytics case, the micro-productivity trap, and a first look at building custom GPTs and Gems.">
+<script>try{var t=localStorage.getItem("emba-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-article">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
+    <a class="brand" href="../index.html" aria-label="EMBA26042 home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 34 34"><path d="M17 2.5 31.5 17 17 31.5 2.5 17Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><circle cx="17" cy="17" r="4.2" fill="currentColor"/></svg></span>
+      <span class="masthead"><strong>EMBA 26042</strong><span>IIM Sirmaur · AI for Business</span></span>
+    </a>
+    <nav class="top-nav" id="topNav" aria-label="Main">
+      <a href="../index.html#profile">Profile</a>
+      <a href="../index.html#log">Executive Learning Journal</a>
+      <a href="../index.html#assignments">Assignments</a>
+      <a href="https://embaaib.netlify.app/" target="_blank" rel="noopener">Course Faculty<span class="arrow">↗</span></a>
+      <a href="https://linkedin.com/in/pratap-nayak" target="_blank" rel="noopener">LinkedIn Profile<span class="arrow">↗</span></a>
+    </nav>
+    <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch theme">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+    </button>
+    <button class="icon-btn" id="menuToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="topNav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<div class="wrap">
+<div class="layout"><main class="content" id="main">
+  <p class="crumb"><a href="../index.html#log">← Executive Learning Journal</a></p>
+  <section>
+    <div class="session-header">
+      <div class="session-num-col">
+        <span class="session-label">Sessions</span>
+        <span class="session-number range">7–8</span>
+      </div>
+      <div class="session-body">
+<h3>Custom GPTs and the Delta Core Analytics Case</h3>
+<p class="session-meta"><span>Oct 10, 2026</span><span>Day 4</span><span>HBR Case W45949</span></p>
+<p class="session-overview">How far should a marketing-analytics firm automate itself, and how can a custom AI tool carry an organisation’s own knowledge and rules?</p>
+<p class="mini-h">Intended learning outcome</p><p>Evaluate when AI should automate, augment or reinvent a business, and explain what a custom GPT or Gem is and where it fits in an organisation.</p><div class="exec-box"><p class="exec-label">Executive Summary</p><ul class="plain"><li>Delta Core Analytics saw EBITDA fall from 14% to about 9.5%, five of its top 25 clients cut back, and GenAI-enabled competitors delivered insights roughly 40% cheaper</li><li>The class rejected full automation and recommended phased, <a class="xref" href="../reference/ai-techniques.html#human-loop">human-in-the-loop</a> integration</li><li>The central warning was the <strong><a class="xref" href="../reference/session-frameworks.html#micro-trap">micro-productivity trap</a></strong>: improving only the current offering or process while missing the chance to reinvent the business model</li><li>Custom GPTs and Gems tailor AI to an organisation’s knowledge and rules; they give customised answers but take no autonomous action, which belongs to Agentic AI</li></ul></div><p class="mini-h">The case in brief</p><p>Delta Core is a marketing-intelligence firm founded in 2017 that performed well until 2024. <a class="xref" href="../reference/beyond-the-class.html#disruption">Competitors using Generative AI</a> delivered marketing-analytics insights faster and about 40% cheaper, and clients began asking why Delta Core took weeks. The board held five distinct positions:</p><div class="kt-table-wrap"><table class="kt-table"><thead><tr><th>Role</th><th>Position</th></tr></thead><tbody><tr><td>CEO</td><td>Growth with discipline; preserve human-centred values</td></tr><tr><td>Chief Data Officer</td><td>Automate 60–70% of workflows and become an AI-native insight platform</td></tr><tr><td>CFO</td><td>Concerned about upfront investment against uncertain ROI</td></tr><tr><td>HR Director</td><td>Worried about attrition, skill loss and culture</td></tr><tr><td>Analytics Lead</td><td>Automate the basics, keep a human loop for emotional validation</td></tr></tbody></table></div><p class="mini-h">Can AI fully replace human judgment?</p><ul class="plain"><li><strong>Against full replacement</strong> — a retail client’s senior executive made a casual remark about a customer group leaving the brand; it carried emotional and contextual signals that the analytics missed entirely</li><li><strong>Pattern versus originality</strong> — AI is strong at finding existing patterns but struggles with original, creative or emotionally nuanced views</li><li><strong>Tacit knowledge</strong> — for example, why some consumers value one brand above a technically stronger rival; no current analytics engine captures it</li><li><strong>Evidence</strong> — 75% of top clients stayed loyal, suggesting human-driven insight still carries value</li></ul><p>The recommended path was to automate report generation, dashboards, A/B testing and first campaign drafts; keep people on strategic recommendations, nuanced client conversations and insight generation; convert tacit knowledge into documented knowledge; and put <a class="xref" href="../reference/beyond-the-class.html#eu-ai-act">data governance and legal checks</a> in place before scaling.</p><p class="mini-h">The micro-productivity trap</p><p>The professor’s central warning was that most suggestions in class, such as pilots and automating patterned tasks, were valuable but incremental. Two traps were named:</p><ul class="plain"><li><strong><a class="xref" href="../reference/session-frameworks.html#micro-trap">Offering lock-in</a></strong> — thinking only about how AI can improve what the company sells today</li><li><strong>Process lock-in</strong> — thinking only about how AI can improve how the company works today</li></ul><p>The transformative question is whether AI can reinvent the business model. Digital transformation devastated industries close to digital products, such as text and music, and barely touched construction and agriculture. The same test applies to AI: which services are closest to becoming “AI products”? Analytics may be one. Organisations that reinvented themselves in the digital era thrived; those that only improved offerings or processes merely survived.</p><p>The professor also separated <a class="xref" href="../reference/session-frameworks.html#transformation">two terms</a>: <strong>transition</strong> improves existing offerings or processes with technology, while <strong>transformation</strong> changes how value is added across the whole <a class="xref" href="../extras/beyond-the-toolkit.html#vc">value chain</a>.</p><p class="mini-h">Group project tasks set in class</p><ol class="num-list"><li><span class="num-circle">1</span><span><strong>Prioritise GenAI capabilities</strong> — supported by a competitor analysis of the four rivals named in the case, judged for fit with Delta Core</span></li><li><span class="num-circle">2</span><span><strong>Navigate tensions</strong> — between speed, cost, strategic differentiation and responsible implementation</span></li><li><span class="num-circle">3</span><span><strong>Address risks</strong> — ethical, organisational and operational risks of GenAI, and how to manage them</span></li><li><span class="num-circle">4</span><span><strong>Preserve culture and talent</strong> — while adapting to AI-driven change</span></li><li><span class="num-circle">5</span><span><strong>Advise the CEO</strong> — on strategic next steps given market dynamics and internal tensions</span></li></ol><p>The case also provides interactive digital twins of the five executives. Students interview each one and use the responses as project data.</p><p class="mini-h">Custom GPTs and Gems</p><ul class="plain"><li><strong>Why customise</strong> — standard ChatGPT and Gemini are generic. A custom tool can embed product knowledge, <a class="xref" href="../reference/ai-techniques.html#rag">restrict answers to internal data</a>, play a persona such as an executive’s digital twin, or act as a domain adviser</li><li><strong>Live demonstration</strong> — two simple prompts produced a working assistant that answers only in Hindi, written in Devanagari. The same exercise worked in Gemini Gems on a free account</li><li><strong>Examples shown</strong> — a product-catalogue guide that answers customer queries precisely, a synthetic-data generator for students without real data, and a daily AI news brief tuned to the user’s interests</li><li><strong><a class="xref" href="../reference/ai-techniques.html#custom-vs-agentic">Boundary with Agentic AI</a></strong> — these tools give customised responses; they do not send emails or open calendars. That capability belongs to Agentic AI, a later topic</li><li><strong>Constraints</strong> — Custom GPTs need a paid plan, while Gems work on a free account; shared links need the recipient to hold an account; both platforms are migrating (GPTs to Plugins, Gems to Skills)</li></ul><p>In a group exercise, teams proposed Gem ideas: a strategy consultant built on MBA frameworks, a weekly fashion-trend tracker, and a daily global marketing-trends brief. The professor asked that the group Gem target a specific value-creation use case, not a generic tool.</p><p class="mini-h">Career advice from the session</p><p>Asked what industry expects from AI specialists, the professor said employers want people who find new ways to create value, not only to optimise existing processes. Certifications matter less than that ability. Master the AI platform your organisation already uses first, and help the organisation generate value with it.</p><p class="mini-h">Open questions</p><ul class="plain"><li>Which industries or services are true “AI products” open to full disruption? This was set as a research activity for the class</li><li>Will AI-generated marketing content gain full acceptance, as machine-woven cloth did, or will human-made content keep a premium?</li><li>What is the right proportion of human involvement as AI capability grows?</li></ul><p class="mini-h">Leadership Reflection</p><p style="margin:0 0 4px; font-weight:600; color:var(--ink-soft); font-size:0.9rem;">What this session means for manufacturing leaders:</p><p>The Delta Core dilemma is a plant leader’s dilemma too. Automate reports, scheduling and routine analysis, but keep engineers’ judgement on root causes and customer escalations. The harder question sits above the plant: if a competitor sells AI-driven predictive quality as a product, does our service or process advantage still matter?</p><p style="margin-top:12px;">Start by documenting tacit shop-floor knowledge. It is the asset AI tools will need, and the one competitors cannot copy.</p>
+
+</div>
+    </div>
+    <div class="session-pager"><span><a href="session-03.html">← Sessions 5–6</a></span><span><a href="session-05.html">Sessions 9–10 →</a></span></div>
+  </section>
+</main><aside class="toc" id="toc" aria-label="On this page"></aside></div>
+  <footer>
+    <span class="fw-strong">EMBA26042</span>
+    <span>IIM Sirmaur · Executive MBA with AI · Batch 03 (2026–28)</span>
+    <span>AI for Business · Continuous Assessment</span>
+    <span><a href="https://embaaib.netlify.app/" target="_blank" rel="noopener">Course faculty page</a></span>
+    <span class="footer-note">Public learning journal documenting the journey from engineering transformation to business transformation.</span>
+  </footer>
+
+</div>
+
+<button class="icon-btn to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<script src="../site.js" defer></script>
+
+</body>
+</html>
