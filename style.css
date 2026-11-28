@@ -72,7 +72,7 @@ sup{ color:var(--accent); font-size:.78em; font-weight:700; }
 .top-nav a{ color:var(--body); text-decoration:none; font-size:var(--fs-sm); font-weight:500; padding:8px 11px; white-space:nowrap; border-radius:999px; transition:background-color .15s ease,color .15s ease; }
 .top-nav a:hover{ color:var(--ink); background:var(--accent-wash); }
 .top-nav a[aria-current]{ color:var(--accent-strong); background:var(--accent-wash); font-weight:600; }
-.top-nav .arrow{ display:inline-block; margin-left:3px; font-size:.88em; }
+.top-nav .arrow{ display:inline-block; margin-left:3px; font-size:.95em; }
 .icon-btn{ flex:none; width:40px; height:40px; display:grid; place-items:center; border:1px solid var(--line); border-radius:999px; background:var(--paper); color:var(--ink-soft); cursor:pointer; transition:border-color .15s ease,color .15s ease; }
 .icon-btn:hover{ border-color:var(--accent); color:var(--accent); }
 .icon-btn svg{ width:18px; height:18px; }
