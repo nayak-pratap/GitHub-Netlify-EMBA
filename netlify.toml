@@ -1,0 +1,29 @@
+# Deploy configuration for emba26042.netlify.app
+#
+# This previously existed only inside the Netlify web UI, which meant nothing
+# about how the site deploys was version-controlled or reviewable. Keeping it
+# here means the publish settings and every redirect land in the same commit
+# as the change that needs them.
+#
+# Static site: no build step. Netlify serves the repo root as-is and resolves
+# pretty URLs (/sessions/session-08) from the matching .html file on disk.
+
+[build]
+  publish = "."
+
+# ---------------------------------------------------------------------------
+# Redirects
+#
+# None are in force today: the site has never had a _redirects file or a
+# netlify.toml, and deploy logs report no redirect rules processed.
+#
+# Links to this site are already circulated to faculty and classmates, so
+# existing file names and in-page anchors are treated as stable. When a page
+# must be renamed or an anchor changed, add the redirect here FIRST, in the
+# same commit as the rename, so the old URL never breaks.
+#
+# [[redirects]]
+#   from = "/sessions/old-name"
+#   to = "/sessions/new-name"
+#   status = 301
+# ---------------------------------------------------------------------------
